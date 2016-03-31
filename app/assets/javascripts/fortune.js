@@ -27,6 +27,7 @@ $(function() {
 
 var id;
 var element;
+
 $(function() {
   $('.button_to').click(function(event) {
   event.preventDefault();
@@ -38,7 +39,6 @@ $(function() {
     method: "DELETE",
     url: 'api/fortunes/' + id
   };
-  var thisButton = $(this);
 
   var request = $.ajax(requestData);
 
